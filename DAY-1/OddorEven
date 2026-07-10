@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        if(n<200){
+        if(n%2==0)
+            System.out.printf("The Given Number %03d is Even.",n);
+        else
+            System.out.printf("The Given Number %03d is Odd.",n);
+        }
+        else
+            System.out.println("Invalid Input");
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

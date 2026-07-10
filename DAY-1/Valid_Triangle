@@ -1,0 +1,18 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a1=sc.nextInt();
+        int a2=sc.nextInt();
+        int a3=sc.nextInt();
+        String result=((a1+a2+a3) == 180) ? "Triangle is valid": "Triangle is not valid";
+        System.out.println(result);
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

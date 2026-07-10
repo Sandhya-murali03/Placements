@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int price=sc.nextInt();
+        int quantity=sc.nextInt();
+        float revenue=price*quantity;
+        if(revenue>=5000){
+            float discount=revenue/10;
+            System.out.printf("The discount is Rs.%.2f%n", discount);
+            System.out.printf("The net revenue is Rs.%.2f%n",(revenue-discount));
+        }
+        else{
+            System.out.printf("The discount is Rs.0%n");
+            System.out.printf("The net revenue is Rs.%.2f%n",revenue);
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
