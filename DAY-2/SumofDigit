@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        
+        int temp,rem,sum=0;
+        temp=n;
+        if(n>9 && n<99){
+            while(temp!=0){
+                rem=temp%10;
+                sum=sum+rem;
+                temp=temp/10;
+            }
+            System.out.printf("Sum of Digit %d is %03d",n,sum);
+        }
+        else
+        {
+            System.out.println("Invalid Input");
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

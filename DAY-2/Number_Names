@@ -1,0 +1,54 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        if(n>=0 && n<=9){
+            switch(n){
+                case 0:
+                    System.out.println("Integer is 0 and String is Zero");
+                    break;
+                case 1:
+                    System.out.println("Integer is 1 and String is One");
+                    break;
+                case 2:
+                    System.out.println("Integer is 2 and String is Two");
+                    break;
+                 case 3:
+                    System.out.println("Integer is 3 and String is Three");
+                    break;
+                 case 4:
+                    System.out.println("Integer is 4 and String is Four");
+                    break;
+                 case 5:
+                    System.out.println("Integer is 5 and String is Five");
+                    break;
+                 case 6:
+                    System.out.println("Integer is 6 and String is Six");
+                    break;
+                 case 7:
+                    System.out.println("Integer is 7 and String is Seven");
+                    break;
+                 case 8:
+                    System.out.println("Integer is 8 and String is Eight");
+                    break;
+                 case 9:
+                    System.out.println("Integer is 9 and String is Nine");
+                    break;
+                    
+                default:
+                    System.out.println("Invalid Input");
+                    break;
+            }
+        }
+        else
+            System.out.println("Invalid Input");
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

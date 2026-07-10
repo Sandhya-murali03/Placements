@@ -1,0 +1,72 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int tickets=sc.nextInt();
+        char ref=sc.next().charAt(0);
+        char cop=sc.next().charAt(0);
+        char type=sc.next().charAt(0);
+        int k=75,q=150;
+        float total=0,dis=0,price=0;
+        /*if(type=='k' || type=='q'){
+            if(type=='k'){
+                price=k*tickets;
+                if(tickets>=20){
+                    dis=(float) (price*10)/100;
+                    
+                    total=(float)price-dis ;
+                }
+                if(cop=='y'){
+                    dis=(float)(total*2)/100;
+                    total=price-dis;
+                    
+                }
+                if(ref=='y'){
+                    total+=(float)(tickets*50)+total;
+                    
+                }
+            }
+            System.out.printf("Ticket cost:%.2f\n",total);
+        }
+        else if(type!='k' && type!='q'){
+            System.out.println("Invalid Input");
+        }
+        
+        else{
+            System.out.println("Minimum of 5 and Maximum of 40 tickets");
+        }*/
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        if(tickets<5 || tickets>40)
+            System.out.println("Minimum of 5 and Maximum of 40 tickets");
+        else if(type=='k'||type=='q'){
+            if(type=='k'){
+                price=k*tickets;
+            }
+            if(type=='q'){
+                price=q*tickets;
+            }
+            if(tickets>=20){
+                dis=(float) price*10/100;
+                total=(float) price-dis;
+            }
+            if(cop=='y'){
+                dis=(float) price*2/100;
+                total=(float)  price-dis;
+            }
+            if(ref=='y'){
+                float reff= tickets *50;
+                total+=reff;
+                    
+            }
+            System.out.printf("Ticket cost:%.2f\n",total);
+        }
+        else
+            System.out.println("Invalid Input");
+    }
+}
