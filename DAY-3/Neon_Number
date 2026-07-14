@@ -1,0 +1,30 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int sqr=n*n;
+        int sum=0,rem;
+        if(n>=1 && n<=9){
+            
+        while(sqr!=0){
+            rem=sqr%10;
+            sum+=rem;
+            sqr=sqr/10;
+        }
+        if(sum == n)
+            System.out.printf("%03d is a Neon Number.",n);
+        else
+            System.out.printf("%04d is not a Neon Number.",n);
+        }
+        else
+            System.out.println("Invalid Input");
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

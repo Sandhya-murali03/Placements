@@ -1,0 +1,32 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner (System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int div=0,div1=0,sum=0,sum1=0;
+        for(int i=1;i<=a;i++){
+            
+            if(a%i ==0){
+                
+                sum=i+sum;
+            }
+        }
+        for(int i=1;i<=b;i++){
+            if(b%i==0){
+            sum1=i+sum1;
+            }
+    }
+    if(sum/a == sum1/b)
+        System.out.println("The Given Number "+a+" and "+b+" are Friendly Pairs.");
+    else
+        System.out.println("The Given Number "+a+" and "+b+" are Not Friendly Pairs.");
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        if(a<b && a>0 && a<999 && b>1 && b<=999){
+            if(b<=9){
+            for(int i=a;i<=b;i++){
+                System.out.printf("%d ",i);
+        }
+            }
+            else if(b<=99){
+                for(int i=a;i<=b;i++){
+                System.out.printf("%02d ",i);
+        }
+                
+            }
+            else{
+                for(int i=a;i<=b;i++){
+                System.out.printf("%03d ",i);
+        }
+            }
+            
+        }
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

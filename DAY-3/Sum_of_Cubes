@@ -1,0 +1,27 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int m=sc.nextInt();
+        int n=sc.nextInt();
+        double res=0;
+        int sum=0;
+        if(m<=n){
+        for(int i=m;i<=n;i++){
+            res= Math.pow (i,3);
+            sum+=res;
+        }
+        System.out.println(sum);
+        }
+        else{
+            System.out.println("M should be less than or equal to N");
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

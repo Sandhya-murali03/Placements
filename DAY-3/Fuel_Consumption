@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int lit=sc.nextInt();
+        int dis=sc.nextInt();
+        
+        if(lit<0 || dis<0){
+            System.out.println("Invalid Input");
+        }
+        else{
+        double lit_km=(double) lit*100/dis/1.0;
+        double dis_mil=(double) dis*0.6214;//Distance is given in KM, we have to convert it to miles 
+        double lit_gal=(double) lit*0.2642;//Fuel consumption is given in liters, we have to convert it to gallons
+        double gal_mil=(double) dis_mil/lit_gal; //miles/gallon
+        System.out.println("Liters/100KM");
+        System.out.printf("%.2f\n",lit_km);
+        System.out.println("Miles/gallons");
+        System.out.printf("%.2f",gal_mil);
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

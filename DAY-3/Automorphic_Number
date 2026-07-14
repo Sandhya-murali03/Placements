@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int pro=1;
+        int n=sc.nextInt();
+        int n1=n*n;
+        int temp=n1;
+        if(n>1 && n<=9){
+            temp=temp%10;
+            if(temp==n){
+                System.out.printf("The Number %.1f is Automorphic Number",n/1.0);
+             }
+            else
+                System.out.printf("The Number %.1f is Not Automorphic Number",n/1.0);
+        }
+        
+        else{
+            System.out.println("Invalid Input");
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}

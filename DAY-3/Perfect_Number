@@ -1,0 +1,28 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int sum=0;
+        if(n>0){
+            for(int i=1;i<n;i++){
+                if(n%i==0){
+                    sum+=i;
+                }
+            }
+            if(sum == n)
+                System.out.printf("The Number %.1f is a Perfect Number.",n/1.0);
+            else
+                System.out.printf("The Number %.1f is a Not Perfect Number.",n/1.0);
+        }
+        else
+            System.out.println("Invalid Input");
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
