@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int arr[]=new int[n];
+        for(int i=0;i<n;i++){
+            arr[i]=sc.nextInt();
+        }
+        System.out.print("The Perfect Square Values are ");
+        int count=0, sum=0;
+        
+        for(int i=0;i<arr.length;i++){
+            int num=(int) Math.sqrt(arr[i]);
+            if(num*num == arr[i]){
+                count+=1;
+                System.out.print(arr[i]+" ");
+                sum=sum+arr[i];
+            }
+            
+        }
+        System.out.println();
+        System.out.println("The Number of Perfect Squares are "+count);
+        System.out.println("The Sum of Perfect Square is "+sum);
+        
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
